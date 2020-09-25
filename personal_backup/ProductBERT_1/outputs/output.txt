@@ -1,0 +1,176 @@
+Using TensorFlow backend.
+There are 3 GPU(s) available.
+We will use the GPU: Tesla K80
+Number of assortment sets: 13,937
+
+Number of products: 92,353
+
+       STORE_ID  ...                                              INDEX
+5824        368  ...  [29658, 53098, 23070, 31297, 15398, 26299, 219...
+3559        335  ...  [6678, 38263, 8717, 25715, 25755, 29658, 35085...
+7587        402  ...  [6678, 38263, 29658, 35577, 38132, 13160, 3105...
+4021        340  ...  [41655, 35577, 13160, 16164, 25814, 8282, 2924...
+11812      2981  ...                                            [44797]
+11805      2979  ...                                     [42405, 45128]
+2577        320  ...  [6678, 18151, 38263, 29658, 32621, 35577, 3736...
+458         288  ...  [6678, 25755, 35577, 53098, 54567, 13160, 2899...
+1939        313  ...  [38263, 12765, 25755, 29658, 35577, 37360, 543...
+3652        337  ...  [25715, 16164, 25826, 41176, 35359, 41145, 306...
+
+[10 rows x 5 columns]
+       PRODUCT_ID  MANUFACTURER  ... CURR_SIZE_OF_PRODUCT  INDEX
+92343    18273019          2223  ...              11.5 OZ  92344
+92344    18273051           436  ...                64 OZ  92345
+92345    18273115          1681  ...                       92346
+92346    18273133          2227  ...                16 OZ  92347
+92347    18292005           764  ...                       92348
+92348    18293142          6384  ...                       92349
+92349    18293439          6393  ...                       92350
+92350    18293696          6406  ...                       92351
+92351    18294080          6442  ...                       92352
+92352    18316298           764  ...                       92353
+
+[10 rows x 8 columns]
+ Assortment:  [4592, 4472, 3872, 3889, 4537, 4624, 4652, 4691, 4746, 4831, 4888, 5014, 5404, 5440, 5638]
+Labels:  [1, 2, 3, 2, 2, 2, 1, 4, 6, 1, 1, 2, 1, 1, 2]
+
+Padding/truncating all assortments to 400 values...
+
+Done.
+tensor([[5189, 5238, 5379, 5595]])
+tensor([[1, 1, 1, 1]])
+4
+4
+tensor([[1, 1, 3,  ..., 0, 0, 0],
+        [1, 1, 2,  ..., 0, 0, 0],
+        [1, 1, 0,  ..., 0, 0, 0],
+        [2, 2, 1,  ..., 0, 0, 0]])
+tensor([[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+         1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+         1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+         1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+         1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+         1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+         1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+         1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+         1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+         1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+         1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+         1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+         1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+         1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+         1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+         1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+         1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]])
+The BERT model has 201 different named parameters.
+
+==== Embedding Layer ====
+
+bert.embeddings.word_embeddings.weight                  (92353, 768)
+bert.embeddings.position_embeddings.weight                (512, 768)
+bert.embeddings.token_type_embeddings.weight                (2, 768)
+bert.embeddings.LayerNorm.weight                              (768,)
+bert.embeddings.LayerNorm.bias                                (768,)
+
+==== First Transformer ====
+
+bert.encoder.layer.0.attention.self.query.weight          (768, 768)
+bert.encoder.layer.0.attention.self.query.bias                (768,)
+bert.encoder.layer.0.attention.self.key.weight            (768, 768)
+bert.encoder.layer.0.attention.self.key.bias                  (768,)
+bert.encoder.layer.0.attention.self.value.weight          (768, 768)
+bert.encoder.layer.0.attention.self.value.bias                (768,)
+bert.encoder.layer.0.attention.output.dense.weight        (768, 768)
+bert.encoder.layer.0.attention.output.dense.bias              (768,)
+bert.encoder.layer.0.attention.output.LayerNorm.weight        (768,)
+bert.encoder.layer.0.attention.output.LayerNorm.bias          (768,)
+bert.encoder.layer.0.intermediate.dense.weight           (3072, 768)
+bert.encoder.layer.0.intermediate.dense.bias                 (3072,)
+bert.encoder.layer.0.output.dense.weight                 (768, 3072)
+bert.encoder.layer.0.output.dense.bias                        (768,)
+bert.encoder.layer.0.output.LayerNorm.weight                  (768,)
+bert.encoder.layer.0.output.LayerNorm.bias                    (768,)
+
+==== Output Layer ====
+
+bert.pooler.dense.weight                                  (768, 768)
+bert.pooler.dense.bias                                        (768,)
+classifier.weight                                           (1, 768)
+classifier.bias                                                 (1,)
+
+======== Epoch 1 / 5 ========
+Training...
+  Batch   100  of  3,136.    Elapsed: 0:01:33.
+  Batch training loss: 1135744.12
+  Batch   200  of  3,136.    Elapsed: 0:03:05.
+  Batch training loss: 111968.66
+  Batch   300  of  3,136.    Elapsed: 0:04:38.
+  Batch training loss: 3.91
+  Batch   400  of  3,136.    Elapsed: 0:06:10.
+  Batch training loss: 1942905.12
+  Batch   500  of  3,136.    Elapsed: 0:07:41.
+  Batch training loss: 3658721.25
+Traceback (most recent call last):
+  File "TAPED-2.py", line 323, in <module>
+    labels=b_labels)
+  File "/u/sdreddy/miniconda3/envs/product2/lib/python3.6/site-packages/torch/nn/modules/module.py", line 547, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/u/sdreddy/check_siddu/modeling_bert.py", line 1478, in forward
+    output_attentions=output_attentions,
+  File "/u/sdreddy/miniconda3/envs/product2/lib/python3.6/site-packages/torch/nn/modules/module.py", line 547, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/u/sdreddy/check_siddu/modeling_bert.py", line 749, in forward
+    output_attentions=output_attentions,
+  File "/u/sdreddy/miniconda3/envs/product2/lib/python3.6/site-packages/torch/nn/modules/module.py", line 547, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/u/sdreddy/check_siddu/modeling_bert.py", line 418, in forward
+    output_attentions,
+  File "/u/sdreddy/miniconda3/envs/product2/lib/python3.6/site-packages/torch/nn/modules/module.py", line 547, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/u/sdreddy/check_siddu/modeling_bert.py", line 385, in forward
+    intermediate_output = self.intermediate(attention_output)
+  File "/u/sdreddy/miniconda3/envs/product2/lib/python3.6/site-packages/torch/nn/modules/module.py", line 547, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/u/sdreddy/check_siddu/modeling_bert.py", line 330, in forward
+    hidden_states = self.intermediate_act_fn(hidden_states)
+  File "/u/sdreddy/check_siddu/activations.py", line 22, in _gelu_python
+    return x * 0.5 * (1.0 + torch.erf(x / math.sqrt(2.0)))
+RuntimeError: CUDA error: device-side assert triggered
+
+------------------------------------------------------------
+Sender: LSF System <rer@dccxc218>
+Subject: Job 150084: <python TAPED-2.py> in cluster <dcc> Exited
+
+Job <python TAPED-2.py> was submitted from host <dccxl001> by user <sdreddy> in cluster <dcc> at Mon Jun 22 09:54:34 2020
+Job was executed on host(s) <4*dccxc218>, in queue <x86_7d>, as user <sdreddy> in cluster <dcc> at Mon Jun 22 09:54:42 2020
+                            <4*dccxc220>
+</u/sdreddy> was used as the home directory.
+</u/sdreddy/check_siddu> was used as the working directory.
+Started at Mon Jun 22 09:54:42 2020
+Terminated at Mon Jun 22 10:03:04 2020
+Results reported at Mon Jun 22 10:03:04 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python TAPED-2.py
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   485.47 sec.
+    Max Memory :                                 2193 MB
+    Average Memory :                             2021.47 MB
+    Total Requested Memory :                     260504.00 MB
+    Delta Memory :                               258311.00 MB
+    Max Swap :                                   -
+    Max Processes :                              3
+    Max Threads :                                17
+    Run time :                                   525 sec.
+    Turnaround time :                            510 sec.
+
+The output (if any) is above this job summary.
+

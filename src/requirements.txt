@@ -1,0 +1,10 @@
+numpy
+tokenizers == 0.7.0
+dataclasses;python_version<'3.7'
+packaging
+filelock
+requests
+tqdm >= 4.27
+regex != 2019.12.17
+sentencepiece
+sacremoses

@@ -4,5 +4,5 @@ tensorflow
 sklearn
 numpy
 matplotlib
-scipy == 1.4.1
+scipy == 1.10.0
 transformers
